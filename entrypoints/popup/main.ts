@@ -1,8 +1,11 @@
 import './style.css';
-import { setupCounter } from '@/components/counter';
+import { saveButton } from '@/components/palette';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <button id="counter" type="button"></button>
+  <div id="palette">
+    <input id="color" type="color" value="#d84942" />
+    <button id="save">Save</button>
+  </div>
 `;
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!);
+saveButton(document.querySelector<HTMLButtonElement>('#save')!);

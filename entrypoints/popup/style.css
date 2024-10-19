@@ -20,13 +20,18 @@ body {
   place-items: center;
 }
 
-
-button {
-  min-width: 120px;
+#palette {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em 2em;
+  margin: 1em;
+}
+#save {
+  min-width: 50px;
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 1.2em;
-  margin: 0.5em;
+  padding: .6em 1em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
@@ -35,11 +40,11 @@ button {
   transition: border-color 0.25s;
   white-space: nowrap;
 }
-button:hover {
+#save:hover {
   border-color: #646cff;
 }
-button:focus,
-button:focus-visible {
+#save:focus,
+#save:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
@@ -51,7 +56,7 @@ button:focus-visible {
   a:hover {
     color: #747bff;
   }
-  button {
+  #save {
     background-color: #f9f9f9;
   }
 }
